@@ -1,0 +1,22 @@
+MSISDN	  Date 	     Time    	     	Page       		             Error
+=====================================================================================================
+	 28/09/2014  04:46:53 PM		RnD.BLTemp.BusinessObject.BOCategory	 	The type initializer for 'SQLFactory.SQLHelper' threw an exception.
+   at SQLFactory.SQLHelper..ctor()
+   at RnD.BLTemp.BusinessObject.BOCategory.GetCategorys(Int32 startIndex, Int32 maxRows) in e:\Rasel_Bappi\Project\RnD.BLTemp\RnD.BLTemp.BusinessObject\BOCategory.cs:line 61
+
+
+	 28/09/2014  04:48:45 PM		RnD.BLTemp.BusinessObject.BOCategory	 	The type initializer for 'SQLFactory.SQLHelper' threw an exception.
+   at SQLFactory.SQLHelper..ctor()
+   at RnD.BLTemp.BusinessObject.BOCategory.GetCategorys(Int32 startIndex, Int32 maxRows) in e:\Rasel_Bappi\Project\RnD.BLTemp\RnD.BLTemp.BusinessObject\BOCategory.cs:line 61
+
+
+	 28/09/2014  04:49:19 PM		RnD.BLTemp.BusinessObject.BOCategory	 	The type initializer for 'SQLFactory.SQLHelper' threw an exception.
+   at SQLFactory.SQLHelper..ctor()
+   at RnD.BLTemp.BusinessObject.BOCategory.GetCategorys(Int32 startIndex, Int32 maxRows) in e:\Rasel_Bappi\Project\RnD.BLTemp\RnD.BLTemp.BusinessObject\BOCategory.cs:line 61
+
+
+	 28/09/2014  04:50:47 PM		RnD.BLTemp.BusinessObject.BOCategory	 	The type initializer for 'SQLFactory.SQLHelper' threw an exception.
+   at SQLFactory.SQLHelper..ctor()
+   at RnD.BLTemp.BusinessObject.BOCategory.GetCategorys(Int32 startIndex, Int32 maxRows) in e:\Rasel_Bappi\Project\RnD.BLTemp\RnD.BLTemp.BusinessObject\BOCategory.cs:line 61
+
+

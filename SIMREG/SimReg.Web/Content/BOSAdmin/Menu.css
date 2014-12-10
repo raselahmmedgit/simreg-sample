@@ -1,0 +1,446 @@
+﻿*
+{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+
+/*body { font-family: "PT Sans", sans-serif; background: #f5f5f5; font-size: 100%;}*/
+a
+{
+	color: #666;
+	text-decoration: none;
+}
+
+.nav
+{
+	background: #F36523;
+	border-radius: 0px;
+	width: 96%;
+	margin: 0px auto;
+	height: 30px;
+}
+
+	.nav li
+	{
+		list-style: none;
+	}
+
+	.nav > li
+	{
+		padding: 0;
+		float: left;
+		position: relative;
+	}
+
+		.nav > li > a
+		{
+			float: left;
+			color: #fff;r
+			/*font-size: 13px;*/
+			text-decoration: none;
+			line-height: 30px;
+			padding: 0 20px;
+			/*border-right: 1px solid #777;*/
+			border-left: 1px solid #555;
+			height: 30px;
+		}
+
+		.nav > li:hover > a
+		{
+			background: #F9AE8A;
+			/*border-right: 1px solid #666;*/
+			text-decoration: underline;
+
+		}
+
+		.nav > li:first-child > a
+		{
+			border-left: 0;
+		}
+
+		.nav > li:last-child > a
+		{
+			border-right: 0;
+		}
+
+		.nav > li:hover > div
+{
+	display: block;
+	background-color: #F9AE8A;
+}
+
+		/* MEGA DROP DOWN */
+
+		.nav > li > div
+		{
+			position: absolute;
+			left: 0;
+			top: 30px;
+			display: none;
+			background: #fff;
+			padding: 10px 10px;
+			box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+			overflow: hidden;
+		}
+
+			.nav > li > div p
+			{
+				color: #666;
+			}
+
+			.nav > li > div.right
+			{
+				right: 0;
+				left: auto;
+			}
+
+.container-1, .container-2, .container-3, .container-4
+{ /*font-size: 80%;*/
+}
+
+
+/* COLUMNS */
+.col1, .col2, .col3, .col4, .col5
+{
+	margin: 10px 0;
+	float: left;
+	padding: 0 10px;
+}
+
+
+/* 1 Column */
+.container-1
+{
+	width: 170px;
+	z-index: 1000;
+}
+
+	.container-1 .col1
+	{
+		width: 100%;
+	}
+
+/* 2 Column */
+.container-2
+{
+	width: 270px;
+	z-index: 1000;
+}
+
+	.container-2 .col1
+	{
+		width: 50%;
+	}
+
+	.container-2 .col2
+	{
+		width: 100%;
+	}
+
+/* 3 Column */
+.container-3
+{
+	width: 400px;
+	z-index: 1000;
+}
+
+	.container-3 .col1
+	{
+		width: 33.33%;
+	}
+
+	.container-3 .col2
+	{
+		width: 66.66%;
+	}
+
+	.container-3 .col3
+	{
+		width: 100%;
+	}
+
+
+/* 4 Column */
+.container-4
+{
+	width: 430px;
+	z-index: 1000;
+}
+
+	.container-4 .col1
+	{
+		width: 50%;
+	}
+
+	.container-4 .col2
+	{
+		width: 50%;
+	}
+
+
+
+
+/* 5 Column */
+.container-5
+{
+	width: 600px;
+	z-index: 1000;
+}
+
+	.container-5 .col1
+	{
+		width: 20%;
+	}
+
+	.container-5 .col2
+	{
+		width: 40%;
+	}
+
+	.container-5 .col3
+	{
+		width: 60%;
+	}
+
+	.container-5 .col4
+	{
+		width: 80%;
+	}
+
+	.container-5 .col5
+	{
+		width: 100%;
+	}
+
+/* HIGHLIGHTS */
+
+.container-3 .highlighted
+{
+	width: 400px;
+	margin-left: -20px;
+	padding: 20px;
+	background: #e4fbff;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.container-4 .highlighted
+{
+	width: 500px;
+	margin-left: -10px;
+	padding: 20px;
+	background: #e4fbff;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+
+
+.clearfix:after
+{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.hideDiv
+{
+	display: none;
+}
+
+	.hideDiv:hover
+	{
+		display: inherit;
+	}
+
+
+/******************************************/
+
+/* Container DIV - automatically generated */
+.simply-scroll-container
+{
+	position: relative;
+}
+
+/* Clip DIV - automatically generated */
+.simply-scroll-clip
+{
+	position: relative;
+	overflow: hidden;
+}
+
+/* UL/OL/DIV - the element that simplyScroll is inited on
+Class name automatically added to element */
+.simply-scroll-list
+{
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+	.simply-scroll-list li
+	{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+		.simply-scroll-list li img
+		{
+			border: none;
+			display: block;
+		}
+
+/* Master button styles - note that left and right 
+versions are included although they are not used in this example */
+
+.simply-scroll-btn
+{
+	position: absolute;
+	background-image: url(buttons.png);
+	width: 42px;
+	height: 44px;
+	z-index: 3;
+	cursor: pointer;
+}
+
+.simply-scroll-btn-left
+{
+	left: 6px;
+	bottom: 6px;
+	background-position: 0 -44px;
+}
+
+	.simply-scroll-btn-left.disabled
+	{
+		background-position: 0 0 !important;
+	}
+
+	.simply-scroll-btn-left:hover
+	{
+		background-position: 0 -88px;
+	}
+
+.simply-scroll-btn-right
+{
+	right: 6px;
+	bottom: 6px;
+	background-position: 84px -44px;
+}
+
+	.simply-scroll-btn-right.disabled
+	{
+		background-position: 84px 0 !important;
+	}
+
+	.simply-scroll-btn-right:hover
+	{
+		background-position: 84px -88px;
+	}
+
+.simply-scroll-btn-up
+{
+	right: 6px;
+	top: 6px;
+	background-position: -126px -44px;
+}
+
+	.simply-scroll-btn-up.disabled
+	{
+		background-position: -126px 0 !important;
+	}
+
+	.simply-scroll-btn-up:hover
+	{
+		background-position: -126px -88px;
+	}
+
+.simply-scroll-btn-down
+{
+	right: 6px;
+	bottom: 6px;
+	background-position: -42px -44px;
+}
+
+	.simply-scroll-btn-down.disabled
+	{
+		background-position: -42px 0 !important;
+	}
+
+	.simply-scroll-btn-down:hover
+	{
+		background-position: -42px -88px;
+	}
+
+/* Custom class modifications - adds to / overrides above
+
+Vertical scroller example, with custom base class */
+
+/* Container DIV */
+.vert
+{
+	width: 340px; /* wider than clip for custom button pos. */
+	height: 400px;
+	margin-bottom: 1.5em;
+}
+
+	/* Clip DIV */
+	.vert .simply-scroll-clip
+	{
+		width: 290px;
+		height: 400px;
+	}
+
+	/* Explicitly set height/width of each list item */
+	.vert .simply-scroll-list li
+	{
+		width: 290px;
+		height: 200px;
+	}
+
+	/* Modified button positions, overriding previous styles */
+	.vert .simply-scroll-btn-up
+	{
+		right: 0;
+		top: 0;
+	}
+
+	.vert .simply-scroll-btn-down
+	{
+		right: 0;
+		top: 52px;
+	}
+
+.tabMenuBar
+{
+	background-color: #03883D;
+}
+
+.tabMenu
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+
+	.tabMenu:hover
+	{
+		background-color: #EBEBEB;
+		color: #666666;
+	}
+
+.tabMenuSelected
+{
+	background-color: #EBEBEB;
+	color: #666666;
+}

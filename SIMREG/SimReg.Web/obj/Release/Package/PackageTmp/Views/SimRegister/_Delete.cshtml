@@ -1,0 +1,19 @@
+﻿@model SimReg.Web.ViewModels.SIMREG_NEWFORMViewModel
+@using (Ajax.BeginForm("Delete", "SimRegister", null,
+            new AjaxOptions
+            {
+                UpdateTargetId = "updateTargetId",
+                InsertionMode = InsertionMode.Replace,
+                HttpMethod = "POST",
+                OnSuccess = "DeleteSimRegisterSuccess",
+            }, new { @id = "deleteSimRegisterForm" }))
+{  
+
+    <div id="updateTargetId" class="error invisible">
+    </div>
+    @Html.HiddenFor(model => model.ID)
+    <div class="display-field">
+        Do you want delete this data?
+    </div>
+
+}

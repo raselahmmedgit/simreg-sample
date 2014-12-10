@@ -1,0 +1,12 @@
+MSISDN	  Date 	     Time    	     	Page       		             Error
+=====================================================================================================
+	 20/10/2014  06:46:17 PM		RnD.BLTemp.BusinessObject.BOCategory	 	The type initializer for 'SQLFactory.SQLHelper' threw an exception.
+   at SQLFactory.SQLHelper..ctor()
+   at RnD.BLTemp.BusinessObject.BOCategory.GetCategorys(Int32 startIndex, Int32 maxRows) in e:\Rasel_Bappi\Project\RnD.BLTemp\RnD.BLTemp.BusinessObject\BOCategory.cs:line 61
+
+
+	 20/10/2014  06:48:35 PM		RnD.BLTemp.BusinessObject.BOCategory	 	The type initializer for 'SQLFactory.SQLHelper' threw an exception.
+   at SQLFactory.SQLHelper..ctor()
+   at RnD.BLTemp.BusinessObject.BOCategory.GetCategorys(Int32 startIndex, Int32 maxRows) in e:\Rasel_Bappi\Project\RnD.BLTemp\RnD.BLTemp.BusinessObject\BOCategory.cs:line 61
+
+

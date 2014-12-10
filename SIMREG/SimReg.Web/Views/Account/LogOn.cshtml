@@ -1,0 +1,49 @@
+﻿@model SimReg.Web.Models.LogOnModel
+@{
+    ViewBag.Title = "Log In";
+    Layout = "~/Views/Shared/_LayoutLogOn.cshtml";
+}
+<br />
+@using (Html.BeginForm())
+{
+    <table align="center" width="40%">
+
+        <tr>
+            <td width="30%">
+                @Html.LabelFor(m => m.UserName)
+            </td>
+            <td>
+                @Html.TextBoxFor(m => m.UserName)
+                @Html.ValidationMessageFor(m => m.UserName)
+            </td>
+        </tr>
+        <tr>
+            <td width="30%">
+                @Html.LabelFor(m => m.Password)
+            </td>
+            <td>
+                @Html.PasswordFor(m => m.Password)
+                @Html.ValidationMessageFor(m => m.Password)
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+
+                @Html.CheckBoxFor(m => m.RememberMe)
+                @Html.LabelFor(m => m.RememberMe)
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                @Html.ValidationSummary(true, "Login was unsuccessful. Please correct the errors and try again.")
+            </td>
+        </tr>
+        <tr>
+            <td width="30%" colspan="2" align="center">
+                <input class="button" type="submit" value="Log In" style="width: 100px !important" />
+            </td>
+
+        </tr>
+    </table>
+}

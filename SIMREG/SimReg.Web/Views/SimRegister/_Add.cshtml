@@ -1,0 +1,82 @@
+﻿@model SimReg.Web.ViewModels.SIMREG_NEWFORMViewModel
+@using (Ajax.BeginForm("Add", "SimRegister", null,
+        new AjaxOptions
+        {
+            UpdateTargetId = "updateTargetId",
+            InsertionMode = InsertionMode.Replace,
+            HttpMethod = "POST",
+            OnSuccess = "AddSimRegisterSuccess",
+        }, new { @id = "addSimRegisterForm" }))
+{
+    
+    @Html.ValidationSummary(true)
+    <div id="updateTargetId" class="error invisible">
+    </div>
+    <table width="100%">
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.REQUESTEDBYID)
+            </td>
+            <td>
+                @Html.DropDownList("REQUESTEDBYID", Model.ddlREQUESTEDBYS, new { @class = "ddl" })
+                @Html.ValidationMessageFor(model => model.REQUESTEDBYID)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.MSISDNTITLE)
+            </td>
+            <td>
+                @Html.TextBoxFor(model => model.MSISDNTITLE)
+                @Html.ValidationMessageFor(model => model.MSISDNTITLE)
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.REQUESTEDTYPEID)
+            </td>
+            <td>
+                @Html.DropDownList("REQUESTEDTYPEID", Model.ddlREQUESTEDTYPES, new { @class = "ddl" })
+                @Html.ValidationMessageFor(model => model.REQUESTEDTYPEID)
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.REQUESTEDDATE)
+
+            </td>
+            <td>
+                @Html.TextBoxFor(model => model.REQUESTEDDATE, new { @class = "jqDateTime" })
+                @Html.ValidationMessageFor(model => model.REQUESTEDDATE)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.DELIVEREDBYDATE)
+            </td>
+            <td>
+                @*@Html.TextBoxFor(model => model.DELIVEREDBYDATE, new { @class = "jqDateTime" })*@
+                @Html.TextBoxFor(model => model.DELIVEREDBYDATE, new { @readonly = "readonly" })
+                @Html.ValidationMessageFor(model => model.DELIVEREDBYDATE)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.DELIVEREDBYID)
+            </td>
+            <td>@*@Html.DropDownList("DELIVEREDBYID", Model.ddlDELIVEREDBYS, new { @class = "ddl" })*@
+                @Html.TextBoxFor(model => model.DELIVEREDBYTITLE, new { @readonly = "readonly" })
+                @Html.HiddenFor(model => model.DELIVEREDBYID)
+                @Html.ValidationMessageFor(model => model.DELIVEREDBYID)</td>
+        </tr>
+    </table>
+
+}
+<script type="text/javascript">
+    $(function () {
+        $('.jqDateTime').datepicker({ dateFormat: 'mm-dd-yy' });
+    });
+</script>
+

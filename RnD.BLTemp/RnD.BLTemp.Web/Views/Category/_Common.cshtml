@@ -1,0 +1,34 @@
+﻿@model RnD.BLTemp.Web.Models.CategoryModel
+@using (Ajax.BeginForm("Save", "Category", null,
+        new AjaxOptions
+        {
+            UpdateTargetId = "updateTargetId",
+            InsertionMode = InsertionMode.Replace,
+            HttpMethod = "POST",
+            OnSuccess = "DialogSuccess('" + @Model.DialogMessage + "')",
+            //OnSuccess = "DialogSuccess",
+        }, new { @id = "commonDialogForm" }))
+{
+    
+    <fieldset>
+        <legend>Category:</legend>
+        @Html.ValidationSummary(true)
+        <div id="updateTargetId" class="error invisible">
+        </div>
+        @Html.HiddenFor(model => model.IsSaveMode)
+        @Html.HiddenFor(model => model.CategoryId)
+        <div class="editor-field">
+            @Html.LabelFor(model => model.CategoryName)
+            @Html.EditorFor(model => model.CategoryName)
+            @Html.ValidationMessageFor(model => model.CategoryName)
+        </div>
+        <div class="editor-field pull-right">
+            @*@if (Model.IsSubmitable)
+            {*@
+            <input type="submit" id="btnDialogSubmit" name="btnDialogSubmit" value="Save" />
+            @*}*@
+            <input type="button" id="btnDialogCancel" name="btnDialogCancel" value="Cancel" onclick=" $($('#commonDialog').dialog('close'));" />
+        </div>
+
+    </fieldset>
+}

@@ -1,0 +1,19 @@
+﻿@model SimReg.Web.ViewModels.SIMREG_REQUESTEDTYPEViewModel
+@using (Ajax.BeginForm("Delete", "RequestType", null,
+            new AjaxOptions
+            {
+                UpdateTargetId = "updateTargetId",
+                InsertionMode = InsertionMode.Replace,
+                HttpMethod = "POST",
+                OnSuccess = "DeleteRequestTypeSuccess",
+            }, new { @id = "deleteRequestTypeForm" }))
+{  
+
+        <div id="updateTargetId" class="error invisible">
+        </div>
+        @Html.HiddenFor(model => model.REQUESTEDTYPEID)
+        <div class="display-field">
+            Do you want delete this data?
+        </div>
+
+}

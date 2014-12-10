@@ -1,0 +1,26 @@
+﻿@model SIMREG.ViewModels.SIMREG_NEWFORMViewModel
+@using (Ajax.BeginForm("Edit", "Category", null,
+        new AjaxOptions
+        {
+            UpdateTargetId = "updateTargetId",
+            InsertionMode = InsertionMode.Replace,
+            HttpMethod = "POST",
+            OnSuccess = "EditNEWFORMSuccess",
+        }, new { @id = "editNEWFORMDialog" }))
+{
+    <fieldset>
+        <legend>Category:</legend>
+        @Html.ValidationSummary(true)
+        <div id="updateTargetId" class="error invisible">
+        </div>
+        @Html.HiddenFor(model => model.ID)
+        <div class="editor-field">
+            <strong>@Html.LabelFor(model => model.CategoryName): </strong>
+            @Html.EditorFor(model => model.CategoryName)
+            @Html.ValidationMessageFor(model => model.CategoryName)
+        </div>
+        @*<p>
+            <input type="submit" name="name" value="Edit" />
+        </p>*@
+    </fieldset>
+}

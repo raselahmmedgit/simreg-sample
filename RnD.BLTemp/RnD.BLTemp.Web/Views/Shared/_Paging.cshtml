@@ -1,0 +1,51 @@
+﻿@if (ViewBag.PageViewModel != null)
+{
+
+    <div id="lvPager">
+        <input type="hidden" value="@ViewBag.PageViewModel.PageSize" id="hdSize" />
+        <div class="pager fl">
+            <label id="lblpre">@ViewBag.PageViewModel.LinkPre</label>
+            <label id="lblIst">@ViewBag.PageViewModel.LinkIstPage</label>
+            <label id="spDot1" class="page-numbers prev">@ViewBag.PageViewModel.LinkIstDot</label>
+            <div id="pl">@ViewBag.PageViewModel.LinkDynamicPage</div>
+            <label id="spDot2" class="page-numbers prev">@ViewBag.PageViewModel.Link2ndDot</label>
+            <label id="lblLast">@ViewBag.PageViewModel.LinkLastPage</label>
+            <label id="lblnext">@ViewBag.PageViewModel.LinkNext</label>
+        </div>
+        <div class="pager f2">
+            <a id="A1" href="javascript:void(0);" class="page-numbers @ViewBag.PageViewModel.PageNumber10Class">10</a>&nbsp;
+                                        <a id="A2" href="javascript:void(0);" class="page-numbers @ViewBag.PageViewModel.PageNumber20Class">20</a>&nbsp;
+                                        <a id="A3" href="javascript:void(0);" class="page-numbers @ViewBag.PageViewModel.PageNumber30Class">30</a>&nbsp;
+                                        <a id="A4" href="javascript:void(0);" class="page-numbers @ViewBag.PageViewModel.PageNumber40Class">40</a>&nbsp;
+                                        <a id="A5" href="javascript:void(0);" class="page-numbers @ViewBag.PageViewModel.PageNumber50Class">50</a>&nbsp;
+                                        <a id="A6" href="javascript:void(0);" class="page-numbers @ViewBag.PageViewModel.PageNumber60Class">60</a>&nbsp;
+                                        <a id="A7" href="javascript:void(0);" class="page-numbers @ViewBag.PageViewModel.PageNumber70Class">70</a>&nbsp;
+                                        <a id="A8" href="javascript:void(0);" class="page-numbers @ViewBag.PageViewModel.PageNumber80Class">80</a>&nbsp;
+                                        <a id="A9" href="javascript:void(0);" class="page-numbers @ViewBag.PageViewModel.PageNumber90Class">90</a>&nbsp;
+                                        <a href="javascript:void(0);" id="A10" class="page-numbers @ViewBag.PageViewModel.PageNumber100Class">100</a>
+            <span class="page-numbers desc">per page</span>
+        </div>
+    </div>
+                                
+}
+
+<div class="pager fl">
+    <span class='page-numbers prev'>prev</span>
+    <div id='pl'>
+        <a id='lnk_1' class='page-numbers current'>1</a>
+        <a id='lnk_2' class='page-numbers' href='/Category/Index?Index=2&Size=10'>2</a>
+        <a id='lnk_3' class='page-numbers' href='/Category/Index?Index=3&Size=10'>3</a>
+        <a id='lnk_4' class='page-numbers' href='/Category/Index?Index=4&Size=10'>4</a>
+        <a id='lnk_5' class='page-numbers' href='/Category/Index?Index=5&Size=10'>5</a>
+        <a id='lnk_6' class='page-numbers' href='/Category/Index?Index=6&Size=10'>6</a>
+        <a id='lnk_7' class='page-numbers' href='/Category/Index?Index=7&Size=10'>7</a>
+    </div>
+    <span class='page-numbers prev'>...</span>
+    <a href='/Category/Index?Index=10&amp;Size=10'>
+        <span class='page-numbers'>10</span>
+    </a>
+    <a href='/Category/Index?Index=2&amp;Size=10'>
+        <span class='page-numbers next'>next</span>
+    </a>
+
+</div>

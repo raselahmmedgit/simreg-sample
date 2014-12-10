@@ -1,0 +1,95 @@
+﻿@model SimReg.Web.ViewModels.SIMREG_NEWFORMSearchViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="SimRegisterIndexPage">
+    <br />
+    <div id="SimRegisterSearchZone">
+        @using (Html.BeginForm("ExportToExcel", "SimRegister", FormMethod.Post))
+        {
+            <table width="100%">
+                <tr>
+                    <td>
+                        @Html.LabelFor(model => model.MSISDNTITLE)
+                    </td>
+                    <td colspan="2">
+                        @Html.TextBoxFor(model => model.MSISDNTITLE)
+
+                    </td>
+                    <td>
+                        @Html.LabelFor(model => model.REQUESTEDBYID)
+                    </td>
+                    <td colspan="2">
+                        @Html.DropDownList("REQUESTEDBYID", Model.ddlREQUESTEDBYS, new { @class = "ddl" })
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.LabelFor(model => model.REQUESTEDDATE)
+
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.REQUESTEDDATEFrom, new { @class = "jqDateTime" })&nbsp;-&nbsp;
+                        @Html.ValidationMessageFor(model => model.REQUESTEDDATE)
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.REQUESTEDDATETo, new { @class = "jqDateTime" })
+                        @Html.ValidationMessageFor(model => model.REQUESTEDDATE)
+                    </td>
+                    <td>
+                        @Html.LabelFor(model => model.DELIVEREDBYDATE)
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.DELIVEREDBYDATEFrom, new { @class = "jqDateTime" })&nbsp;-&nbsp;
+                        @Html.ValidationMessageFor(model => model.DELIVEREDBYDATE)
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.DELIVEREDBYDATETo, new { @class = "jqDateTime" })
+                        @Html.ValidationMessageFor(model => model.DELIVEREDBYDATE)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.LabelFor(model => model.REQUESTEDTYPEID)
+                    </td>
+                    <td colspan="2">
+                        @Html.DropDownList("REQUESTEDTYPEID", Model.ddlREQUESTEDTYPES, new { @class = "ddl" })
+                    </td>
+                    <td>
+                        @Html.LabelFor(model => model.DELIVEREDBYID)
+                    </td>
+                    <td colspan="2">
+                        @Html.DropDownList("DELIVEREDBYID", Model.ddlDELIVEREDBYS, new { @class = "ddl" })
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6" align="center">
+                        <input id="btnSimRegisterExportExl" type="submit" class="button" style="width: 120px !important" value="Export To Excel" />&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="btnSimRegisterSearchRpt" type="button" class="button" value="Search" />&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="btnSimRegisterClearRpt" type="button" class="button" value="Clear" />
+                    </td>
+                </tr>
+            </table>
+        }
+    </div>
+    <br />
+    <div id="SimRegisterDataTableZone">
+        <table style="width: 100%;" id="SimRegisterSearchJQGrid" class="scroll" cellpadding="0" cellspacing="0">
+        </table>
+        <div id="SimRegisterSearchJQGrid_Pager" class="scroll" style="text-align: center;">
+        </div>
+    </div>
+    <div id="detailsSimRegisterDialog" title="Details">
+    </div>
+    <div id="editSimRegisterDialog" title="Edit">
+    </div>
+    <div id="deleteSimRegisterDailog" title="Delete">
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $('.jqDateTime').datepicker({ dateFormat: 'mm-dd-yy' });
+    });
+</script>
+<script src="@Url.Content("~/Scripts/App/newform-jq.js")" type="text/javascript"></script>

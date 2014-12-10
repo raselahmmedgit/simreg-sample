@@ -1,0 +1,6 @@
+E:\Rasel_Bappi\Project\SIMREG\Project\SIMREG\SIMREG\bin\SIMREG.dll
+E:\Rasel_Bappi\Project\SIMREG\Project\SIMREG\SIMREG\bin\SIMREG.pdb
+E:\Rasel_Bappi\Project\SIMREG\Project\SIMREG\SIMREG\bin\EntityFramework.dll
+E:\Rasel_Bappi\Project\SIMREG\Project\SIMREG\SIMREG\bin\EntityFramework.xml
+E:\Rasel_Bappi\Project\SIMREG\Project\SIMREG\SIMREG\obj\Debug\SIMREG.dll
+E:\Rasel_Bappi\Project\SIMREG\Project\SIMREG\SIMREG\obj\Debug\SIMREG.pdb

@@ -1,0 +1,4 @@
+E:\Rasel_Bappi\Project\SimReg\SimReg.BusinessEntity\bin\Debug\SimReg.BusinessEntity.dll
+E:\Rasel_Bappi\Project\SimReg\SimReg.BusinessEntity\bin\Debug\SimReg.BusinessEntity.pdb
+E:\Rasel_Bappi\Project\SimReg\SimReg.BusinessEntity\obj\Debug\SimReg.BusinessEntity.dll
+E:\Rasel_Bappi\Project\SimReg\SimReg.BusinessEntity\obj\Debug\SimReg.BusinessEntity.pdb

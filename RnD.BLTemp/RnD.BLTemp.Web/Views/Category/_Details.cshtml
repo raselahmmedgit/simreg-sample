@@ -1,0 +1,12 @@
+﻿@model RnD.BLTemp.Web.Models.CategoryModel
+<fieldset>
+    <legend>Category:</legend>
+    <div class="display-field">
+        @Html.LabelFor(model => model.CategoryId)
+        @Html.DisplayFor(model => model.CategoryId)
+    </div>
+    <div class="display-field">
+        @Html.LabelFor(model => model.CategoryName)
+        @Html.DisplayFor(model => model.CategoryName)
+    </div>
+</fieldset>

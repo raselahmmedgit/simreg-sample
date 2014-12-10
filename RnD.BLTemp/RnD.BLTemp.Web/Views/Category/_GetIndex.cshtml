@@ -1,0 +1,36 @@
+﻿@model IEnumerable<RnD.BLTemp.Web.Models.CategoryModel>
+
+<table id="categoryDataTable">
+    <thead>
+        <tr>
+            <th>id
+            </th>
+            <th>Category Name
+            </th>
+            <th>Actions
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.CategoryId
+                </td>
+                <td>
+                    @item.CategoryName
+                </td>
+                <td>
+                    @*<a href="@Url.Action("Details", "Category", new { id = item.CategoryId })" class="lnkDetailsCategory">Details</a>&nbsp;&nbsp;&nbsp;
+                            <a href="@Url.Action("Edit", "Category", new { id = item.CategoryId })" class="lnkEditCategory">Edit</a>&nbsp;&nbsp;&nbsp;
+                            <a href="@Url.Action("Delete", "Category", new { id = item.CategoryId })" class="lnkDeleteCategory">Delete</a>*@
+
+                    <a href="@Url.Action("Get", "Category", new { id = item.CategoryId })" class="lnkDetailsCategory">Details</a>&nbsp;&nbsp;&nbsp;
+                            <a href="@Url.Action("Get", "Category", new { id = item.CategoryId })" class="lnkEditCategory">Edit</a>&nbsp;&nbsp;&nbsp;
+                            <a href="@Url.Action("Get", "Category", new { id = item.CategoryId })" class="lnkDeleteCategory">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

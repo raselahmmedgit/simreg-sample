@@ -1,0 +1,10 @@
+E:\Rasel_Bappi\Project\SimReg\SimReg.DataAccess\bin\Release\SimReg.DataAccess.dll
+E:\Rasel_Bappi\Project\SimReg\SimReg.DataAccess\bin\Release\SimReg.DataAccess.pdb
+E:\Rasel_Bappi\Project\SimReg\SimReg.DataAccess\bin\Release\SimReg.BusinessEntity.dll
+E:\Rasel_Bappi\Project\SimReg\SimReg.DataAccess\bin\Release\SimReg.Common.dll
+E:\Rasel_Bappi\Project\SimReg\SimReg.DataAccess\bin\Release\SQLFactory.dll
+E:\Rasel_Bappi\Project\SimReg\SimReg.DataAccess\bin\Release\SimReg.BusinessEntity.pdb
+E:\Rasel_Bappi\Project\SimReg\SimReg.DataAccess\bin\Release\SimReg.Common.pdb
+E:\Rasel_Bappi\Project\SimReg\SimReg.DataAccess\obj\Release\SimReg.DataAccess.csprojResolveAssemblyReference.cache
+E:\Rasel_Bappi\Project\SimReg\SimReg.DataAccess\obj\Release\SimReg.DataAccess.dll
+E:\Rasel_Bappi\Project\SimReg\SimReg.DataAccess\obj\Release\SimReg.DataAccess.pdb

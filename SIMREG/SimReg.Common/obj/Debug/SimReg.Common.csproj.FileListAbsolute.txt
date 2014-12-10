@@ -1,0 +1,7 @@
+E:\Rasel_Bappi\Project\SimReg\SimReg.Common\bin\Debug\SimReg.Common.dll
+E:\Rasel_Bappi\Project\SimReg\SimReg.Common\bin\Debug\SimReg.Common.pdb
+E:\Rasel_Bappi\Project\SimReg\SimReg.Common\bin\Debug\SimReg.BusinessEntity.dll
+E:\Rasel_Bappi\Project\SimReg\SimReg.Common\bin\Debug\SimReg.BusinessEntity.pdb
+E:\Rasel_Bappi\Project\SimReg\SimReg.Common\obj\Debug\SimReg.Common.csprojResolveAssemblyReference.cache
+E:\Rasel_Bappi\Project\SimReg\SimReg.Common\obj\Debug\SimReg.Common.dll
+E:\Rasel_Bappi\Project\SimReg\SimReg.Common\obj\Debug\SimReg.Common.pdb

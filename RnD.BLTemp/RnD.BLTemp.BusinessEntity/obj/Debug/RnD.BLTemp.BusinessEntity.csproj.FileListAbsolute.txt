@@ -1,0 +1,5 @@
+E:\Rasel_Bappi\Project\RnD.BLTemp\RnD.BLTemp.BusinessEntity\bin\Debug\RnD.BLTemp.BusinessEntity.dll
+E:\Rasel_Bappi\Project\RnD.BLTemp\RnD.BLTemp.BusinessEntity\bin\Debug\RnD.BLTemp.BusinessEntity.pdb
+E:\Rasel_Bappi\Project\RnD.BLTemp\RnD.BLTemp.BusinessEntity\obj\Debug\RnD.BLTemp.BusinessEntity.dll
+E:\Rasel_Bappi\Project\RnD.BLTemp\RnD.BLTemp.BusinessEntity\obj\Debug\RnD.BLTemp.BusinessEntity.pdb
+E:\Rasel_Bappi\Project\RnD.BLTemp\RnD.BLTemp.BusinessEntity\obj\Debug\RnD.BLTemp.BusinessEntity.csprojResolveAssemblyReference.cache

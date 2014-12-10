@@ -1,0 +1,12 @@
+E:\Rasel_Bappi\Project\RnD.BLTemp\RnD.BLTemp.BusinessObject\bin\Debug\RnD.BLTemp.BusinessObject.dll
+E:\Rasel_Bappi\Project\RnD.BLTemp\RnD.BLTemp.BusinessObject\bin\Debug\RnD.BLTemp.BusinessObject.pdb
+E:\Rasel_Bappi\Project\RnD.BLTemp\RnD.BLTemp.BusinessObject\bin\Debug\RnD.BLTemp.BusinessEntity.dll
+E:\Rasel_Bappi\Project\RnD.BLTemp\RnD.BLTemp.BusinessObject\bin\Debug\RnD.BLTemp.Common.dll
+E:\Rasel_Bappi\Project\RnD.BLTemp\RnD.BLTemp.BusinessObject\bin\Debug\RnD.BLTemp.DataAccess.dll
+E:\Rasel_Bappi\Project\RnD.BLTemp\RnD.BLTemp.BusinessObject\bin\Debug\SQLFactory.dll
+E:\Rasel_Bappi\Project\RnD.BLTemp\RnD.BLTemp.BusinessObject\bin\Debug\RnD.BLTemp.BusinessEntity.pdb
+E:\Rasel_Bappi\Project\RnD.BLTemp\RnD.BLTemp.BusinessObject\bin\Debug\RnD.BLTemp.Common.pdb
+E:\Rasel_Bappi\Project\RnD.BLTemp\RnD.BLTemp.BusinessObject\bin\Debug\RnD.BLTemp.DataAccess.pdb
+E:\Rasel_Bappi\Project\RnD.BLTemp\RnD.BLTemp.BusinessObject\obj\Debug\RnD.BLTemp.BusinessObject.csprojResolveAssemblyReference.cache
+E:\Rasel_Bappi\Project\RnD.BLTemp\RnD.BLTemp.BusinessObject\obj\Debug\RnD.BLTemp.BusinessObject.dll
+E:\Rasel_Bappi\Project\RnD.BLTemp\RnD.BLTemp.BusinessObject\obj\Debug\RnD.BLTemp.BusinessObject.pdb

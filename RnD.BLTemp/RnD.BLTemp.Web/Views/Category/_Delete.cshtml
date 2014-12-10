@@ -1,0 +1,27 @@
+﻿@model RnD.BLTemp.Web.Models.CategoryModel
+@using (Ajax.BeginForm("Delete", "Category", null,
+            new AjaxOptions
+            {
+                UpdateTargetId = "updateTargetId",
+                InsertionMode = InsertionMode.Replace,
+                HttpMethod = "POST",
+                OnSuccess = "DeleteCategorySuccess",
+            }, new { @id = "deleteCategoryForm" }))
+{  
+    
+    <fieldset>
+        <legend>Category:</legend>
+        <div id="updateTargetId" class="error invisible">
+        </div>
+        @Html.HiddenFor(model => model.CategoryId)
+        <div class="display-field">
+            <strong>Category Name: </strong>@Html.DisplayFor(model => model.CategoryName)
+        </div>
+        <div class="display-field">
+            Do you want delete this category?
+        </div>
+        @*<div class="editor-field">
+            <input type="submit" name="name" value="Delete" />
+        </div>*@
+    </fieldset>
+}

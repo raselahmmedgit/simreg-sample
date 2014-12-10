@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head id="Head1" runat="server">
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/BOSAdmin/BOSAdmin.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/BOSAdmin/Menu.css")" rel="stylesheet" />
+
+    <link href="@Url.Content("~/Content/site.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/themes/base/jquery.ui.all.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.7.1.min.js")" type="text/javascript"></script>
+    @*<script src="@Url.Content("~/Scripts/jquery-1.8.3.min.js")" type="text/javascript"></script>*@
+    @*<script src="@Url.Content("~/Scripts/jquery-2.0.3.min.js")" type="text/javascript"></script>*@
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.8.20.min.js")" type="text/javascript"></script>
+    @*<script src="@Url.Content("~/Scripts/jquery-ui-1.10.3.min.js")" type="text/javascript"></script>*@
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/modernizr-2.7.1.js")" type="text/javascript"></script>
+    @Html.Partial("_JQDialogPartial")
+    @Html.Partial("_JQGridPartial")
+    <script type="text/javascript">
+        $(function () {
+            $('.jqDateTime').datepicker({ dateFormat: 'dd-mm-yy' });
+        });
+    </script>
+</head>
+<body>
+    <div class="MasterPageMainBody">
+        <table style="width: 100%; height: 100%" cellpadding="0px" cellspacing="0px" border="0px">
+            <tr>
+                <td style="height: 50px" align="left" class="banglalink">
+                    <span class="banglalink">
+                        <div id="lblApplication">
+                            Sim Registeration Management System
+                        </div>
+                    </span>
+                </td>
+                <td align="right" style="height: 50px" class="tdnormal">
+                    <div id="logindisplay">
+                        @Html.Partial("_LogOnPartial")
+                    </div>
+                </td>
+            </tr>
+
+            <tr id="trMenu" class="trMenu">
+            </tr>
+
+            <tr id="masterContainer">
+                <td align="center" colspan="2" style="border: solid 1px #FCDCC5; vertical-align: text-top; height: 300px; width: 100%;">
+
+                    @RenderBody()
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" width="100%" align="center" valign="middle" bgcolor="#E2E2E2" class="footertext"
+                    style="height: 30px; background-image: url(/Content/BOSAdmin/images/grid-blue-hd.gif); border-left: darkgray 1px solid; border-right: darkgray 1px solid; border-top: darkgray 1px solid; border-bottom: darkgray 1px solid;">&copy; banglalink 2010
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+</html>

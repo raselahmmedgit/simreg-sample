@@ -1,0 +1,24 @@
+﻿@model SimReg.Web.ViewModels.SIMREG_REQUESTEDBYViewModel
+@using (Ajax.BeginForm("Edit", "RequestBy", null,
+        new AjaxOptions
+        {
+            UpdateTargetId = "updateTargetId",
+            InsertionMode = InsertionMode.Replace,
+            HttpMethod = "POST",
+            OnSuccess = "EditRequestBySuccess",
+        }, new { @id = "editRequestByForm" }))
+{
+
+    @Html.ValidationSummary(true)
+    <div id="updateTargetId" class="error invisible">
+    </div>
+    @Html.HiddenFor(model => model.REQUESTEDBYID)
+    <table width="100%">
+        <tr>
+            <td>@Html.LabelFor(model => model.TITLE)</td>
+            <td>
+                @Html.EditorFor(model => model.TITLE)
+                @Html.ValidationMessageFor(model => model.TITLE)</td>
+        </tr>
+    </table>
+}
