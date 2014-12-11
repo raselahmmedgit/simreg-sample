@@ -39,6 +39,18 @@
         //Save
         $('#btnSave').live('click', function () {
 
+            var masterObj = {};
+            var name = 'Name';
+            var email = 'Email';
+            var addressname = 'Address.Name';
+            var contactnumber = 'Contact.Number';
+
+            masterObj[name] = 'Rasel Ahmmed';
+            masterObj[email] = 'raselahmmed@gmail.com';
+            masterObj[addressname] = 'Dhaka';
+            masterObj[contactnumber] = '01911045573';
+
+            console.log(masterObj);
 
             console.log('btnSave');
 
