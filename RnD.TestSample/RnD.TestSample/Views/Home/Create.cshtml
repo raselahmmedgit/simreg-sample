@@ -5,8 +5,32 @@
 
 <section id="profileForm">
     <h2>Profile...</h2>
+    @*<form id="formProfile" method="post" action="" novalidate="novalidate">
+    </form>*@
     @using (Html.BeginForm(null, null, FormMethod.Post, new { id = "formProfile" }))
     {
+        @*@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "formProfile", action = "" }))
+    {*@
+        @*@using (Ajax.BeginForm("Create", "Home", null,
+new AjaxOptions
+{
+UpdateTargetId = "updateTargetId",
+InsertionMode = InsertionMode.Replace,
+HttpMethod = "POST",
+OnSuccess = "OnSuccess",
+}, new { @id = "formProfile" }))
+{*@
+    
+    @*@using (Ajax.BeginForm(null, null, null,
+new AjaxOptions
+{
+UpdateTargetId = "updateTargetId",
+InsertionMode = InsertionMode.Replace,
+HttpMethod = "POST",
+OnSuccess = "OnSuccess",
+}, new { @id = "formProfile" }))
+{*@   
+     
         @Html.ValidationSummary(true)
 
         <fieldset>
@@ -51,6 +75,10 @@
             masterObj[contactnumber] = '01911045573';
 
             console.log(masterObj);
+
+            var isValid = $('#formProfile').valid();
+
+            console.log(isValid);
 
             console.log('btnSave');
 

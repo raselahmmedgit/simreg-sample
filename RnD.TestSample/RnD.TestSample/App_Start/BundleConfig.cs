@@ -38,6 +38,14 @@ namespace RnD.TestSample
                         "~/Content/themes/base/jquery.ui.datepicker.css",
                         "~/Content/themes/base/jquery.ui.progressbar.css",
                         "~/Content/themes/base/jquery.ui.theme.css"));
+
+            //App Script
+            bundles.Add(new ScriptBundle("~/Script/app/js").Include(
+                        "~/Content/App/app.js"));
+
+            //App Style
+            bundles.Add(new StyleBundle("~/Content/app/css").Include(
+                        "~/Content/app.css"));
         }
     }
 }
