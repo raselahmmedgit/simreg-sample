@@ -25,6 +25,7 @@ namespace RnD.TestSample.Models
     {
         public int Id { get; set; }
         [DisplayName("Address: ")]
+        [Required(ErrorMessage = "Address is required")]
         public string Name { get; set; }
     }
 
@@ -32,6 +33,7 @@ namespace RnD.TestSample.Models
     {
         public int Id { get; set; }
         [DisplayName("Contact Number: ")]
+        [Required(ErrorMessage = "Contact Number is required")]
         public string Number { get; set; }
     }
 }

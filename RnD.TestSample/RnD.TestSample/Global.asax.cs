@@ -1,5 +1,7 @@
-﻿using System;
+﻿using RnD.TestSample.Models;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
@@ -23,6 +25,27 @@ namespace RnD.TestSample
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
+
+            //InitializeAndSeedDb();
+        }
+
+        private static void InitializeAndSeedDb()
+        {
+            try
+            {
+                // Initializes and seeds the database.
+                Database.SetInitializer(new DBInitializer());
+
+                using (var context = new AppDbContext())
+                {
+                    context.Database.Initialize(force: true);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
         }
     }
 }

@@ -40,8 +40,10 @@ namespace RnD.TestSample
                         "~/Content/themes/base/jquery.ui.theme.css"));
 
             //App Script
-            bundles.Add(new ScriptBundle("~/Script/app/js").Include(
-                        "~/Content/App/app.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/app/js").Include(
+                        "~/Scripts/knockout-3.2.0.js",
+                        "~/Scripts/knockout.validation.js",
+                        "~/Scripts/App/app.js"));
 
             //App Style
             bundles.Add(new StyleBundle("~/Content/app/css").Include(

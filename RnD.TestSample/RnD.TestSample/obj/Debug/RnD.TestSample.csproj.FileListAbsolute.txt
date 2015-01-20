@@ -93,6 +93,7 @@ C:\Users\IT_CONSOLID1\Documents\GitHub\simreg-sample\RnD.TestSample\RnD.TestSamp
 C:\Users\IT_CONSOLID1\Documents\GitHub\simreg-sample\RnD.TestSample\RnD.TestSample\bin\DotNetOpenAuth.OpenId.dll
 C:\Users\IT_CONSOLID1\Documents\GitHub\simreg-sample\RnD.TestSample\RnD.TestSample\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
 C:\Users\IT_CONSOLID1\Documents\GitHub\simreg-sample\RnD.TestSample\RnD.TestSample\bin\EntityFramework.dll
+C:\Users\IT_CONSOLID1\Documents\GitHub\simreg-sample\RnD.TestSample\RnD.TestSample\bin\EntityFramework.SqlServer.dll
 C:\Users\IT_CONSOLID1\Documents\GitHub\simreg-sample\RnD.TestSample\RnD.TestSample\bin\Microsoft.Data.Edm.dll
 C:\Users\IT_CONSOLID1\Documents\GitHub\simreg-sample\RnD.TestSample\RnD.TestSample\bin\Microsoft.Data.OData.dll
 C:\Users\IT_CONSOLID1\Documents\GitHub\simreg-sample\RnD.TestSample\RnD.TestSample\bin\Microsoft.Web.Infrastructure.dll
@@ -115,6 +116,7 @@ C:\Users\IT_CONSOLID1\Documents\GitHub\simreg-sample\RnD.TestSample\RnD.TestSamp
 C:\Users\IT_CONSOLID1\Documents\GitHub\simreg-sample\RnD.TestSample\RnD.TestSample\bin\WebMatrix.Data.dll
 C:\Users\IT_CONSOLID1\Documents\GitHub\simreg-sample\RnD.TestSample\RnD.TestSample\bin\WebMatrix.WebData.dll
 C:\Users\IT_CONSOLID1\Documents\GitHub\simreg-sample\RnD.TestSample\RnD.TestSample\bin\EntityFramework.xml
+C:\Users\IT_CONSOLID1\Documents\GitHub\simreg-sample\RnD.TestSample\RnD.TestSample\bin\EntityFramework.SqlServer.xml
 C:\Users\IT_CONSOLID1\Documents\GitHub\simreg-sample\RnD.TestSample\RnD.TestSample\bin\Newtonsoft.Json.xml
 C:\Users\IT_CONSOLID1\Documents\GitHub\simreg-sample\RnD.TestSample\RnD.TestSample\bin\System.Net.Http.Formatting.xml
 C:\Users\IT_CONSOLID1\Documents\GitHub\simreg-sample\RnD.TestSample\RnD.TestSample\bin\System.Web.Helpers.xml
@@ -165,6 +167,6 @@ C:\Users\IT_CONSOLID1\Documents\GitHub\simreg-sample\RnD.TestSample\RnD.TestSamp
 C:\Users\IT_CONSOLID1\Documents\GitHub\simreg-sample\RnD.TestSample\RnD.TestSample\bin\ru\System.Spatial.resources.dll
 C:\Users\IT_CONSOLID1\Documents\GitHub\simreg-sample\RnD.TestSample\RnD.TestSample\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\IT_CONSOLID1\Documents\GitHub\simreg-sample\RnD.TestSample\RnD.TestSample\bin\zh-Hant\System.Spatial.resources.dll
-C:\Users\IT_CONSOLID1\Documents\GitHub\simreg-sample\RnD.TestSample\RnD.TestSample\obj\Debug\RnD.TestSample.csprojResolveAssemblyReference.cache
 C:\Users\IT_CONSOLID1\Documents\GitHub\simreg-sample\RnD.TestSample\RnD.TestSample\obj\Debug\RnD.TestSample.dll
 C:\Users\IT_CONSOLID1\Documents\GitHub\simreg-sample\RnD.TestSample\RnD.TestSample\obj\Debug\RnD.TestSample.pdb
+C:\Users\IT_CONSOLID1\Documents\GitHub\simreg-sample\RnD.TestSample\RnD.TestSample\obj\Debug\RnD.TestSample.csprojResolveAssemblyReference.cache

@@ -20,6 +20,24 @@ namespace RnD.TestSample.Controllers
             return View(profile);
         }
 
+        public ActionResult CreateAjax()
+        {
+            Profile profile = new Profile();
+            return View(profile);
+        }
+
+        public ActionResult CreateAjaxValid()
+        {
+            Profile profile = new Profile();
+            return View(profile);
+        }
+
+        public ActionResult CreateAjaxWithParial()
+        {
+            Profile profile = new Profile();
+            return View(profile);
+        }
+
         [HttpPost]
         public ActionResult Create(Profile profile)
         {
@@ -31,5 +49,6 @@ namespace RnD.TestSample.Controllers
         {
             return View();
         }
+
     }
 }

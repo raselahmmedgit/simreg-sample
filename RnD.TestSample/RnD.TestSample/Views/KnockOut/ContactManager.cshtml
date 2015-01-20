@@ -1,0 +1,51 @@
+﻿@model RnD.TestSample.Models.Profile
+@{
+    ViewBag.Title = "Contact Management";
+}
+
+<section id="profileForm">
+    <table class="table table-striped table-bordered table-condensed">
+        <thead>
+            <tr> 
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: Profiles">
+            <tr>
+                <td data-bind="text: FirstName"></td>
+                <td data-bind="text: LastName"></td>
+                <td data-bind="text: Email"></td>
+                <td><button class="" data-bind="click: $parent.removeProfile">Remove</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Profile...</h2>
+    <fieldset>
+        <ol>
+            <li>
+                <label for="Name">Name: </label>
+                <input type="text" value="" name="Name" id="Name" data-val-required="Name is required" data-val="true">
+            </li>
+            <li>
+                <label for="Name">Name: </label>
+                <input type="text" value="" name="Name" id="Name" data-val-required="Name is required" data-val="true">
+            </li>
+        </ol>
+        <input type="button" id="btnSave" value="Button" />
+    </fieldset>
+</section>
+<script src="~/Scripts/App/app-knockout.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        //-----------------------------------------------------
+
+        //-----------------------------------------------------
+
+    });
+
+</script>
