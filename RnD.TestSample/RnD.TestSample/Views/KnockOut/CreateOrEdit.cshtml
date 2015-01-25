@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "CreateOrEdit";
+}
+<h2>Profile...</h2>
+<fieldset>
+    <ol>
+        <li>
+            <label for="FirstName">First Name: </label>
+            <input type="text" data-bind='value: FirstName' name=""  placeholder="First Name"/>
+        </li>
+        <li>
+            <label for="LastName">Last Name: </label>
+            <input type="text" data-bind='value: LastName' name="" placeholder="Last Name"/>
+        </li>
+        <li>
+            <label for="Name">Email: </label>
+            <input type="text" data-bind='value: Email' name="" placeholder="Email" />
+        </li>
+    </ol>
+    <button data-bind='click: saveProfile'>Save Profile</button>
+    <input type="button" value="Back To Profile List" data-bind="click: $root.backToProfileList" />
+</fieldset>
+<script src="~/Scripts/App/app-contact-create-edit.js"></script>
+<style>
+    .validationMessage {
+        color: red;
+        font-size: 0.8em;
+    }
+</style>

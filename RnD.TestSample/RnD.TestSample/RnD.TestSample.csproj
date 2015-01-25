@@ -270,7 +270,8 @@
     <Content Include="Images\orderedList7.png" />
     <Content Include="Images\orderedList8.png" />
     <Content Include="Images\orderedList9.png" />
-    <Content Include="Scripts\App\app-knockout.js" />
+    <Content Include="Scripts\App\app-contact-create-edit.js" />
+    <Content Include="Scripts\App\app-contact.js" />
     <Content Include="Scripts\App\app.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -311,6 +312,7 @@
     <Content Include="Views\Home\CreateAjaxValid.cshtml" />
     <Content Include="Views\KnockOut\Index.cshtml" />
     <Content Include="Views\KnockOut\ContactManager.cshtml" />
+    <Content Include="Views\KnockOut\CreateOrEdit.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

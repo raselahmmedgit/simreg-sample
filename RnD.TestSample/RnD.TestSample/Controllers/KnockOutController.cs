@@ -20,5 +20,10 @@ namespace RnD.TestSample.Controllers
         {
             return View();
         }
+
+        public ActionResult CreateOrEdit()
+        {
+            return View();
+        }
     }
 }
