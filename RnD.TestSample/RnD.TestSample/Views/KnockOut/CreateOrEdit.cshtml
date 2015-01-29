@@ -1,16 +1,16 @@
 ﻿@{
     ViewBag.Title = "CreateOrEdit";
 }
-<h2>Profile...</h2>
 <fieldset>
-    <ol>
+    <legend style="display:inline !important; font-size: 20px !important;font-weight: bold;margin: 0 !important;padding: 0 !important;">Profile Information:</legend>
+    <ol data-bind='with: profile'>
         <li>
             <label for="FirstName">First Name: </label>
-            <input type="text" data-bind='value: FirstName' name=""  placeholder="First Name"/>
+            <input type="text" data-bind='value: FirstName' name="" placeholder="First Name" />
         </li>
         <li>
             <label for="LastName">Last Name: </label>
-            <input type="text" data-bind='value: LastName' name="" placeholder="Last Name"/>
+            <input type="text" data-bind='value: LastName' name="" placeholder="Last Name" />
         </li>
         <li>
             <label for="Name">Email: </label>

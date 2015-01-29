@@ -37,7 +37,7 @@ var ProfileCollection = function () {
         self.profile = ko.observable(new Profile(currentProfile[0]));
     }
 
-    self.backToProfileList = function () { window.location.href = '/contact'; };
+    self.backToProfileList = function () { window.location.href = '/KnockOut/ContactManager'; };
 
     self.saveProfile = function () {
         console.log("Date to save is : " + JSON.stringify(ko.toJS(self.profile())));
